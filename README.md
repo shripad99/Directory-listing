@@ -83,45 +83,6 @@ Welcome to the Product Management System, a full-stack web application designed 
 5. **Access the Application**:
    - Open your browser and navigate to `http://localhost:3000`.
 
-## API Endpoints
-
-### Products
-✅ **GET /api/products**: Fetch all products.  
-✅ **POST /api/products**: Add a new product.  
-   - Body: `{ "name": "Pipes" }`
-
-### Materials
-✅ **GET /api/materials**: Fetch all materials.  
-✅ **POST /api/materials**: Add a new material.  
-   - Body: `{ "name": "Aluminium" }`
-
-### Grades
-✅ **GET /api/grades**: Fetch all grades.  
-✅ **POST /api/grades**: Add a new grade.  
-   - Body: `{ "name": "F12" }`
-
-### Product Combinations
-✅ **GET /api/product-combinations**: Fetch all product combinations with populated details.  
-✅ **POST /api/combinations**: Add new product combinations.  
-   - Body:
-     ```json
-     {
-       "productId": "67e12985b2df775d347e05b5",
-       "materialId": "67e12a353929ecb6c250e7cb",
-       "gradeIds": ["67e12ab26ac0ed1fe5e2b41d"],
-       "price": 100,
-       "currency": "INR",
-       "shape": "Round",
-       "length": 6,
-       "thickness": "1mm to 3mm"
-     }
-     ```
-✅ **PUT /api/combinations/:id**: Update a product combination.  
-   - Body: `{ "price": 350, "shape": "Round" }`  
-✅ **PUT /api/combinations/bulk**: Bulk update multiple combinations.  
-   - Body: `{ "ids": ["id1", "id2"], "updates": { "price": 350 } }`  
-✅ **DELETE /api/combinations/:id**: Delete a product combination.
-
 ## Usage
 
 1. **Add Product Combinations**:
@@ -142,14 +103,6 @@ Welcome to the Product Management System, a full-stack web application designed 
 4. **Bulk Edit**:
    - Select multiple combinations using the checkboxes.  
    - Use the "Bulk Edit" section to apply changes to all selected items.
-
-## Screenshots
-
-### Add Product Modal
-![Add Product Modal](path/to/add-product-modal-screenshot.png)
-
-### Product Listing
-![Product Listing](path/to/product-listing-screenshot.png)
 
 ## Contributing
 
