@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://directory-listing-backend-lf4o.onrender.com';
 
 export const fetchData = createAsyncThunk('products/fetch', async () => {
   const [products, materials, grades, combinations] = await Promise.all([
