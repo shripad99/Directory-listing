@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const Product = require("../models/product");
+const Product = require("../models/Product");
 const ProductCombination = require("../models/ProductCombination");
 const Material = require("../models/material");
 const Grade = require("../models/Grade");
