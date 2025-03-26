@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addCombination } from '../store/productSlice';
-import './AddProductModal.css'; // Create a separate CSS file for the modal
+import './AddProductModal.css'; 
 
 const AddProductModal = ({ closeModal }) => {
   const dispatch = useDispatch();
